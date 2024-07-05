@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: auto;  /* Allow scrolling */
+}
+
+body {
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 5px;
+}
+
+label {
+  font-size: 1em;
+  margin: 10px 10px;
+}
+
+input {
+  font-size: 1em;
+  padding: 5px;
+  border: 2px solid #ffeb3b;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+button {
+  font-size: 1em;
+  background-color: #ffeb3b;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+#blurb {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#visual-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#visual-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-height: 60%;
+}
+
+#binary-tree {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  overflow: auto;  /* Allow scrolling within the containers */
+  max-height: 100%;
+  margin: 10px 10px;
+}
+
+#array-visual{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 90px;
+  width: 75%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  overflow: auto;  /* Allow scrolling within the containers */
+  max-height: 100%;
+  margin: 10px 10px;
+}
+
+#array-visual:hover, #binary-tree:hover {
+  transform: scale(1.05);
+}
+
+rect:hover, circle:hover, text.circle:hover, text.rect:hover {
+  cursor: pointer;
+  fill: #ffeb3b;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
